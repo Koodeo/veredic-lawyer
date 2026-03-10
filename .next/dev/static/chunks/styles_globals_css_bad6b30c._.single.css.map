@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/globals.css"],"sourcesContent":[":root {\n  --color-primary: ;\n  --color-primary-light: ;\n  --color-primary-dark: ;\n  --color-dark: ;\n  --color-bg: ;\n  --color-bg-alt: ;\n  --color-muted: ;\n  --color-border: ;\n  --color-success: ;\n}\n\nhtml {\n  scroll-behavior: smooth;\n}\n\nbody {\n  background: var(--color-bg);\n  color: var(--color-dark);\n  margin: 0;\n  padding: 0;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n::-moz-selection {\n  background: var(--color-primary);\n  color: white;\n}\n\n::selection {\n  background: var(--color-primary);\n  color: white;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;;AAYA;;;;AAIA;;;;;;;AAOA;;;;AAIA"}}]
+}

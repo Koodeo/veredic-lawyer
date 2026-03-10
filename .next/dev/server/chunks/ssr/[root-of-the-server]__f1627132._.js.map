@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/c2coder/Documents/koodeo/templates/veredic-lawyer/app/page.tsx"],"sourcesContent":["// Sections are added per project\n\nexport default function Home() {\n  return (\n    <main>\n      {/* Sections will be added here based on project requirements */}\n    </main>\n  )\n}\n"],"names":[],"mappings":"AAAA,iCAAiC;;;;;;;AAElB,SAAS;IACtB,qBACE,8OAAC;;;;;AAIL"}}]
+}

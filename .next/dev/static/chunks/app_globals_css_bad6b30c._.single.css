@@ -1,0 +1,92 @@
+/* [project]/app/globals.css [app-client] (css) */
+:root {
+  --cream: #f7f3f1;
+  --cream2: #faf8f6;
+  --stone: #ebe8e3;
+  --stone2: #e2ded8;
+  --charcoal: #1c1e21;
+  --slate: #2a3b4e;
+  --slate2: #3b526b;
+  --gold: #c9b398;
+  --gold2: #b89e82;
+  --ink: #0f1113;
+  --primary: var(--charcoal);
+  --secondary: var(--slate);
+  --accent: var(--gold);
+  --bg: var(--cream);
+  --bg-alt: var(--stone);
+  --color-primary: var(--charcoal);
+  --color-primary-light: var(--charcoal);
+  --color-primary-dark: var(--charcoal);
+  --color-dark: var(--charcoal);
+  --color-bg: var(--cream);
+  --color-bg-alt: var(--stone);
+  --color-muted: var(--slate);
+  --color-border: var(--stone);
+  --color-success: var(--gold);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-body), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body:after {
+  content: "";
+  z-index: 9000;
+  pointer-events: none;
+  opacity: .025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px;
+  position: fixed;
+  inset: 0;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.font-body {
+  font-family: var(--font-body), sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--cream);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--stone);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/*# sourceMappingURL=app_globals_css_bad6b30c._.single.css.map*/

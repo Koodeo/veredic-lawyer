@@ -1,0 +1,256 @@
+[00:00:02.048] Server  LOG     
+[00:00:02.048] Server  LOG       We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:02.048] Server  LOG       The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:02.048] Server  LOG       	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:02.048] Server  LOG     
+[00:00:02.048] Server  LOG       The following mandatory changes were made to your tsconfig.json:
+
+[00:00:02.048] Server  LOG       	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:02.048] Server  LOG     
+[00:00:02.104] Server  LOG     ✓ Ready in 1965ms
+[00:00:13.442] Server  ERROR   ⨯ ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Inter, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:13.843] Server  ERROR   ⨯ ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Inter, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:14.005] Browser ERROR   uncaughtError: Error: ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Inter, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:14.185] Browser ERROR   ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Inter, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:14.784] Browser ERROR   ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Inter, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:07:34.445] Browser ERROR   ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Inter, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:37.444] Browser ERROR   ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Inter, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:47.443] Browser ERROR   ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Inter, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:17:02.694] Server  ERROR   ⨯ ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Inter, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:03.444] Browser ERROR   ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Inter, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:17:08.460] Server  ERROR   ⨯ ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Inter, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:17:09.445] Browser ERROR   ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Inter, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:31.655] Server  ERROR   ⨯ ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Cormorant, Outfit, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:32.444] Browser ERROR   ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Cormorant, Outfit, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:36.821] Server  ERROR   ⨯ ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Cormorant, Outfit, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:37.443] Browser ERROR   ./app/layout.tsx:3:1
+Module not found: Can't resolve './globals.css'
+  1 | import { Cormorant, Outfit, JetBrains_Mono } from "next/font/google"
+  2 | import { siteConfig } from "@/lib/config"
+> 3 | import "./globals.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Navbar } from "@/components/layout/Navbar"
+  5 | import { Footer } from "@/components/layout/Footer"
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:44.119] Server  LOG     ✓ Compiled in 491ms
+[00:20:44.253] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:20:45.445] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html className="cormorant_..." style={{...}}>
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:20:46.775] Server  LOG     ✓ Compiled in 29ms
+[00:25:39.596] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:25:43.241] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:25:43.261] Server  LOG     ✓ Compiled in 446ms
