@@ -1,76 +1,48 @@
-# Koodeo Starter
+# Veredic - Asesoría Legal Estratégica
 
-## Cómo usar este starter
-
-### 1. Clonar el repositorio
-```bash
-git clone <repository-url>
-cd koodeo-starter
-```
-
-### 2. Instalar dependencias con pnpm
-```bash
-pnpm install
-```
-
-### 3. Primer prompt — actualizar config.ts
-Lo primero que debes hacer en cada nuevo proyecto es actualizar `/lib/config.ts` con toda la información del brief del cliente:
-
-- **Identidad**: name, tagline, año
-- **URLs**: domain, url
-- **Contacto**: whatsapp, email, mensajes predefinidos
-- **Fuentes**: display, body, mono
-- **Colores**: paleta de colores completa
-- **Social**: redes sociales
-- **Ubicaciones**: ciudades y zonas horarias
-- **Metadata**: título, descripción, imagen OG
-
-**Nunca hardcodees información del cliente en los componentes**. Todo debe venir desde config.ts.
-
-### 4. Estructura de carpetas
-
-- `/app` - Páginas y layout de Next.js con App Router
-- `/components/layout` - Navbar, Footer (componentes estructurales)
-- `/components/ui` - Componentes reutilizables (Button, Badge, etc.)
-- `/lib` - Configuración central y utilidades
-- `/styles` - Estilos globales
-- `/public` - Assets estáticos (fonts, images, icons)
-
-### 5. Agregar secciones
-Las secciones se agregan directamente en `app/page.tsx`. Importa los componentes que necesites y construye la página sección por sección.
-
-Usa siempre los componentes UI predefinidos:
-- `AnimatedSection` para animaciones al scroll
-- `SectionHeader` para títulos de sección
-- `ButtonWhatsApp` para CTAs de WhatsApp
-- `Badge` para etiquetas
-
-### 6. Deploy en Vercel
-```bash
-pnpm build
-```
-
-Conecta el repositorio a Vercel y cada push se deployará automáticamente.
+Este es el repositorio para el sitio web de Veredic, desarrollado por Koodeo Studio.
 
 ---
 
-## Reglas importantes
+## Cómo Actualizar el Contenido del Sitio Web
 
-- **Cero colores hardcodeados** — usa variables CSS
-- **Cero texto de cliente hardcodeado** — usa config.ts
-- **Cero dependencias sin usar**
-- **TypeScript siempre**
-- **Mobile-first**
-- **Performance 90+ Lighthouse**
+La principal ventaja de este proyecto es que **todo el contenido del sitio se gestiona desde un único archivo de configuración**, sin necesidad de tocar el código de los componentes.
 
-## Flujo de trabajo
+**Archivo de Configuración Principal:** `lib/config.ts`
 
-1. Actualiza config.ts primero
-2. Confirma dirección de diseño antes de codear
-3. Construye sección por sección
-4. Verifica responsive después de cada sección
-5. Suggest conversion improvements proactivamente
+Para actualizar cualquier texto, imagen o dato en el sitio, simplemente edite este archivo.
+
+### Pasos para la Actualización:
+
+1.  **Abra el archivo `lib/config.ts`** en su editor de código.
+2.  **Busque la sección** que desea modificar (ej: `hero`, `services`, `team`, `contact`, etc.).
+3.  **Edite el texto o los datos** directamente dentro de las comillas.
+4.  **Guarde el archivo**. Los cambios se reflejarán automáticamente en el sitio web si se está ejecutando en modo de desarrollo.
 
 ---
 
-Built with ❤️ by Koodeo Studio
+## Instrucciones para Desarrolladores
+
+Si necesita ejecutar el proyecto localmente para desarrollo, siga estos pasos.
+
+### 1. Instalación de Dependencias
+
+Este proyecto utiliza `npm` como gestor de paquetes. Para instalar todas las dependencias necesarias, ejecute el siguiente comando en la terminal, desde la raíz del proyecto:
+
+```bash
+npm install
+```
+
+### 2. Iniciar el Servidor de Desarrollo
+
+Una vez instaladas las dependencias, puede iniciar el servidor de desarrollo local con el siguiente comando:
+
+```bash
+npm run dev
+```
+
+Esto iniciará el sitio web en [http://localhost:3000](http://localhost:3000). Cualquier cambio que guarde en los archivos del proyecto se reflejará automáticamente en su navegador.
+
+---
+
+Desarrollado con los más altos estándares por **Koodeo Studio**.

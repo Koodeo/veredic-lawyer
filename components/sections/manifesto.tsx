@@ -6,23 +6,17 @@ import { siteConfig } from '@/lib/config'
 
 const sectionVariants = {
   initial: { opacity: 0 },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.2,
-    },
-  },
+  animate: { opacity: 1, transition: { duration: 1, staggerChildren: 0.15 } },
 }
 
 const itemVariants = {
-  initial: { opacity: 0, y: 40 },
+  initial: { opacity: 0, y: 30 },
   animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
 }
 
 export default function Manifesto() {
   const sectionRef = useRef(null)
-  const isInView = useInView(sectionRef, { once: true, amount: 0.2 })
+  const isInView = useInView(sectionRef, { once: true, amount: 0.25 })
 
   return (
     <motion.section
@@ -30,53 +24,45 @@ export default function Manifesto() {
       variants={sectionVariants}
       initial="initial"
       animate={isInView ? 'animate' : 'initial'}
-      className="relative overflow-hidden bg-cream px-8 py-24 md:px-16 md:py-40"
+      className="relative bg-primary py-28 text-cream md:py-40"
     >
-      {/* Decorative vertical line (from reference .manifesto-deco) */}
-      <div className="absolute right-16 top-16 hidden h-[110px] w-px bg-gradient-to-b from-accent to-transparent opacity-35 md:block" />
+      <div className="mx-auto max-w-7xl px-8">
+        <div className="absolute right-16 top-16 hidden h-28 w-px bg-gradient-to-b from-accent/20 to-transparent md:block" />
 
-      {/* Kicker */}
-      <motion.div variants={itemVariants} className="mb-14 flex items-center gap-4">
-        <div className="h-px w-[38px] bg-accent opacity-55" />
-        <p className="font-sans text-[10px] font-normal uppercase tracking-[0.22em] text-gold2">
-          {siteConfig.manifesto.kicker}
-        </p>
-      </motion.div>
+        <motion.div variants={itemVariants} className="mb-16 flex items-center gap-4">
+          <div className="h-px w-10 bg-accent/30" />
+          <p className="font-sans text-xs font-normal uppercase tracking-[0.22em] text-gold2">
+            {siteConfig.manifesto.kicker}
+          </p>
+        </motion.div>
 
-      {/* Main Text with innerHTML to render the <span class="highlight"> from config */}
-      <motion.div variants={itemVariants}>
-        <p 
-          className="mb-20 max-w-[880px] font-serif text-[clamp(32px,4vw,58px)] font-normal leading-[1.28] text-primary [&_.highlight]:border-b [&_.highlight]:border-secondary/20 [&_.highlight]:pb-px [&_.highlight]:font-light [&_.highlight]:italic [&_.highlight]:text-secondary"
-          dangerouslySetInnerHTML={{ __html: siteConfig.manifesto.text }}
+        <motion.p 
+          variants={itemVariants}
+          className="mb-24 max-w-4xl font-serif text-[clamp(34px,4.2vw,58px)] font-normal leading-tight text-cream [&_em]:text-cream/50 [&_em]:font-light"
+          dangerouslySetInnerHTML={{ __html: siteConfig.manifesto.text.replace(/<span class="highlight">/g, '<em>').replace(/<\/span>/g, '</em>') }}
         />
-      </motion.div>
 
-      {/* Pillars Grid */}
-      <motion.div 
-        variants={itemVariants} 
-        className="grid grid-cols-1 gap-12 border-t border-primary/10 pt-14 md:grid-cols-3 md:gap-0"
-      >
-        {siteConfig.manifesto.pillars.map((pillar, index) => (
-          <div 
-            key={pillar.id} 
-            className={`border-primary/10 md:pb-0 ${
-              index === 0 ? 'md:border-r md:pr-12' : 
-              index === 1 ? 'md:border-r md:px-12' : 
-              'md:pl-12'
-            }`}
-          >
-            <div className="mb-4 font-serif text-[52px] font-light italic leading-none text-secondary/10">
-              {pillar.number}
+        <motion.div 
+          variants={itemVariants} 
+          className="grid grid-cols-1 gap-y-16 border-t border-cream/10 pt-20 md:grid-cols-3 md:gap-x-12"
+        >
+          {siteConfig.manifesto.pillars.map((pillar, index) => (
+            <div 
+              key={pillar.id} 
+              className={`relative ${index < 2 ? 'md:border-r md:border-cream/10' : ''} ${index === 1 ? 'md:px-12' : ''} ${index === 2 ? 'md:pl-12' : 'md:pr-12'}`}>
+              <div className="mb-5 font-serif text-5xl font-light italic leading-none text-cream/10">
+                {pillar.number}
+              </div>
+              <h3 className="mb-3 font-serif text-2xl font-medium text-cream">
+                {pillar.title}
+              </h3>
+              <p className="font-sans text-sm font-light leading-relaxed text-cream/60">
+                {pillar.description}
+              </p>
             </div>
-            <h3 className="mb-3 font-serif text-2xl font-medium text-primary">
-              {pillar.title}
-            </h3>
-            <p className="font-sans text-[13px] font-light leading-[1.9] text-primary/50">
-              {pillar.description}
-            </p>
-          </div>
-        ))}
-      </motion.div>
+          ))}
+        </motion.div>
+      </div>
     </motion.section>
   )
 }

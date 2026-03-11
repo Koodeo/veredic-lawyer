@@ -1,6 +1,7 @@
 // ─── INTERFACES ───────────────────────
 interface Service {
   id: string;
+  icon: string;
   featured?: boolean;
   name: string;
   description: string;
@@ -114,6 +115,17 @@ export const siteConfig = {
     ogImage: "/og-image.png",
   },
 
+  // ─── NAVIGATION ───────────────────
+  nav: {
+    links: [
+      { label: "Servicios", href: "#services" },
+      { label: "La Firma", href: "#manifesto" },
+      { label: "Socios", href: "#team" },
+      { label: "Contacto", href: "#contact" },
+    ],
+    cta: "Agendar Consulta",
+  },
+
   // ─── CONTENT ───────────────────────
   // All semantic content extracted from reference design
   // Translated to professional Spanish for LATAM corporate market
@@ -121,10 +133,10 @@ export const siteConfig = {
   hero: {
     eyebrow: "Asesoría Legal Estratégica · Est. 2009",
     title: [
-      "Donde la <em>Precisión</em>",
-      "Encuentra el Dominio",
-      "<em>Legal.</em>"
-    ],
+  "Precisión <em>Legal.</em>",
+  "Dominio",
+  "<em>Estratégico.</em>"
+],
     subtitle: "Brindamos asesoría legal de alto impacto para las empresas más influyentes de LATAM — fusiones, litigios complejos y las decisiones estratégicas que definen industrias.",
     ctaPrimary: "Iniciar Su Asunto",
     ctaSecondary: "Áreas de Práctica",
@@ -167,6 +179,7 @@ export const siteConfig = {
     items: [
       {
         id: "01",
+        icon: "Layers",
         featured: true,
         name: "Fusiones y<br>Adquisiciones",
         description: "Asesoría transaccional integral para operaciones transfronterizas, consolidaciones estratégicas y LBOs de toda escala.",
@@ -174,30 +187,35 @@ export const siteConfig = {
       },
       {
         id: "02",
+        icon: "Clock",
         name: "Litigio de<br>Valores",
         description: "Representación agresiva en fraudes de valores, acciones derivadas y asuntos de cumplimiento ante organismos reguladores.",
         linkText: "Explorar Práctica"
       },
       {
         id: "03",
+        icon: "AppWindow",
         name: "Private Equity<br>y Fondos",
         description: "Estructuración, recaudación de fondos y asesoría a portfolio companies para los principales sponsors de private equity.",
         linkText: "Explorar Práctica"
       },
       {
         id: "04",
+        icon: "Globe",
         name: "Arbitraje<br>Internacional",
         description: "Representación en disputas transfronterizas complejas bajo procedimientos ICC, LCIA, CIADI y arbitrajes ad hoc.",
         linkText: "Explorar Práctica"
       },
       {
         id: "05",
+        icon: "ShieldCheck",
         name: "Regulatorio<br>y Cumplimiento",
         description: "Navegando regulaciones financieras, antimonopolio y gobernanza corporativa en un entorno regulatorio en constante evolución.",
         linkText: "Explorar Práctica"
       },
       {
         id: "06",
+        icon: "GitMerge",
         name: "Reestructuración<br>Corporativa",
         description: "Guiando empresas y acreedores a través de reestructuraciones financieras complejas, workouts y procedimientos concursales.",
         linkText: "Explorar Práctica"

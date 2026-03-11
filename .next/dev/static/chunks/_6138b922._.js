@@ -158,6 +158,7 @@ const siteConfig = {
         items: [
             {
                 id: "01",
+                icon: "Layers",
                 featured: true,
                 name: "Fusiones y<br>Adquisiciones",
                 description: "Asesoría transaccional integral para operaciones transfronterizas, consolidaciones estratégicas y LBOs de toda escala.",
@@ -165,30 +166,35 @@ const siteConfig = {
             },
             {
                 id: "02",
+                icon: "Clock",
                 name: "Litigio de<br>Valores",
                 description: "Representación agresiva en fraudes de valores, acciones derivadas y asuntos de cumplimiento ante organismos reguladores.",
                 linkText: "Explorar Práctica"
             },
             {
                 id: "03",
+                icon: "AppWindow",
                 name: "Private Equity<br>y Fondos",
                 description: "Estructuración, recaudación de fondos y asesoría a portfolio companies para los principales sponsors de private equity.",
                 linkText: "Explorar Práctica"
             },
             {
                 id: "04",
+                icon: "Globe",
                 name: "Arbitraje<br>Internacional",
                 description: "Representación en disputas transfronterizas complejas bajo procedimientos ICC, LCIA, CIADI y arbitrajes ad hoc.",
                 linkText: "Explorar Práctica"
             },
             {
                 id: "05",
+                icon: "ShieldCheck",
                 name: "Regulatorio<br>y Cumplimiento",
                 description: "Navegando regulaciones financieras, antimonopolio y gobernanza corporativa en un entorno regulatorio en constante evolución.",
                 linkText: "Explorar Práctica"
             },
             {
                 id: "06",
+                icon: "GitMerge",
                 name: "Reestructuración<br>Corporativa",
                 description: "Guiando empresas y acreedores a través de reestructuraciones financieras complejas, workouts y procedimientos concursales.",
                 linkText: "Explorar Práctica"

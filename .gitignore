@@ -1,1 +1,11 @@
+# Dependencias
 node_modules
+
+# Next.js build output
+.next/
+out/
+
+# IDEs y logs
+.DS_Store
+*.log
+.env*

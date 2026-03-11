@@ -3,6 +3,8 @@ import { siteConfig } from "@/lib/config"
 import "../styles/globals.css"
 import CustomCursor from "@/components/ui/custom-cursor"
 import PageLoader from "@/components/ui/page-loader"
+import Footer from "@/components/layout/Footer"
+import Navbar from "@/components/layout/Navbar"
 
 const cormorant = Cormorant({ 
   subsets: ["latin"], 
@@ -64,9 +66,9 @@ export default function RootLayout({
         <PageLoader />
         <CustomCursor />
         {/* Navbar y Footer comentados para que Hero ocupe toda la pantalla */}
-        {/* <Navbar /> */}
+        <Navbar />
         <main>{children}</main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   )

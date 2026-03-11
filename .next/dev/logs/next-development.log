@@ -155,3 +155,100 @@ It can also happen if the client has a browser extension installed which messes 
 
 [00:13:17.713] Server  LOG     ✓ Compiled in 624ms
 [00:13:47.666] Server  LOG     ✓ Compiled in 78ms
+[00:19:03.003] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:21:12.508] Server  LOG     ✓ Compiled in 83ms
+[00:22:06.325] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:22:06.820] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html suppressHydrationWarning={true} className="cormorant_..." style={{...}}>
+                          <body
+                            className="cormorant_d8d12200-module__HhwCAG__variable outfit_112523cd-module__RgANja__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:26:06.391] Server  LOG     ✓ Compiled in 73ms
+[00:27:46.496] Server  LOG     ✓ Compiled in 102ms
+[00:28:55.861] Server  LOG     ✓ Compiled in 106ms
+[00:30:33.978] Server  LOG     ✓ Compiled in 88ms
+[00:30:52.033] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:32:22.153] Server  LOG     ✓ Compiled in 107ms
+[00:32:50.770] Server  LOG     ✓ Compiled in 74ms
+[00:33:28.340] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:34:13.449] Server  LOG     ✓ Compiled in 69ms
+[00:34:31.511] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:35:21.447] Server  LOG     ✓ Compiled in 84ms
+[00:35:59.589] Server  LOG     ✓ Compiled in 79ms
+[00:36:16.464] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:36:16.618] Browser ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+[00:37:33.341] Server  LOG     ✓ Compiled in 90ms
+[00:37:50.810] Server  ERROR   ⨯ ReferenceError: Footer is not defined
+[00:37:50.814] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:37:51.771] Browser ERROR   uncaughtError: ReferenceError: Footer is not defined
+[00:38:06.903] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:38:07.036] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:38:07.158] Server  ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+[00:38:07.199] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:38:07.427] Server  LOG     ✓ Compiled in 2ms
+[00:38:07.769] Browser ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+[00:40:06.709] Server  LOG     ✓ Compiled in 212ms
+[00:41:05.560] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:41:53.245] Server  LOG     ✓ Compiled in 92ms
+[00:42:10.603] Server  ERROR   ⨯ ReferenceError: Navbar is not defined
+[00:42:10.606] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:42:10.726] Browser ERROR   uncaughtError: ReferenceError: Navbar is not defined
+[00:42:27.565] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:42:27.583] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:42:27.611] Server  LOG     ✓ Compiled in 101ms
+[00:42:27.696] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:42:28.259] Browser ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+[00:51:54.382] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:52:59.781] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:54:54.674] Server  LOG     ✓ Compiled in 106ms
+[00:57:11.238] Server  LOG     ✓ Compiled in 122ms
+[00:59:40.695] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:59:41.247] Browser ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+[00:59:47.034] Browser ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+[00:59:51.586] Browser ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+[00:59:56.202] Browser ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+[01:00:23.254] Server  LOG     ✓ Compiled in 118ms
+[01:00:50.146] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:00:50.574] Browser ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+[01:03:34.636] Server  LOG     ✓ Compiled in 98ms
+[01:04:06.849] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:04:07.274] Browser ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+[01:04:12.064] Browser ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+[01:06:27.781] Server  LOG     ✓ Compiled in 128ms
+[01:06:32.848] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:06:33.291] Browser ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+[01:08:05.623] Server  LOG     ✓ Compiled in 138ms
+[01:08:21.839] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[01:08:22.272] Browser ERROR   Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
