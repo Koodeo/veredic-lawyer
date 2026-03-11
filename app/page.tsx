@@ -11,7 +11,7 @@ import Contact from "@/components/sections/contact";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen bg-cream">
+    <main>
       <Hero />
       <Marquee items={siteConfig.marquee} />
       <Stats />

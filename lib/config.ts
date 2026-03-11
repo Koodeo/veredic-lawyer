@@ -54,7 +54,12 @@ export const siteConfig = {
   url: "https://veredic.com",
 
   // ─── CONTACT ──────────────────────
-  whatsapp: "+5491123456789",
+  whatsapp: "+5491112345678",
+  social: {
+    instagram: "https://instagram.com/veredic",
+    linkedin: "https://linkedin.com/company/veredic",
+    x: "https://x.com/veredic",
+  },
   email: "consulta@veredic.com",
   whatsappMessages: {
     general: "Hola, me gustaría conocer más sobre sus servicios legales.",
@@ -90,14 +95,6 @@ export const siteConfig = {
     muted: "#666666",
     border: "#E5E5E5",
     success: "#22C55E",
-  },
-
-  // ─── SOCIAL ───────────────────────
-  social: {
-    instagram: "",
-    tiktok: "",
-    linkedin: "",
-    x: "",
   },
 
   // ─── LOCATIONS ────────────────────
@@ -173,7 +170,7 @@ export const siteConfig = {
 
   services: {
     kicker: "Lo Que Hacemos",
-    title: "Áreas de práctica diseñadas para la <em>complejidad</em>",
+    title: "Especialidades de alto <em><i>impacto</i></em>",
     count: "06",
     dragHint: "Arrastra para explorar",
     items: [
@@ -225,7 +222,7 @@ export const siteConfig = {
 
   manifesto: {
     kicker: "Nuestra Filosofía",
-    text: "No solo asesoramos — nos <span class=\"highlight\">integramos</span> en el núcleo estratégico de su empresa. Donde otros ven complejidad, nosotros vemos el <span class=\"highlight\">camino preciso</span> hacia la resolución.",
+    text: "No solo asesoramos — nos <span class=\"hl\">integramos</span> en el núcleo estratégico de su empresa. Donde otros ven complejidad, nosotros vemos el <span class=\"hl\">camino preciso</span> hacia la resolución.",
     pillars: [
       {
         id: "I",
@@ -367,33 +364,37 @@ export const siteConfig = {
   },
 
   footer: {
-    tagline: "\"Donde la precisión encuentra el dominio legal.\"",
-    links: {
-      practiceAreas: [
-        "Fusiones y Adquisiciones",
-        "Litigio de Valores", 
-        "Private Equity",
-        "Arbitraje Internacional",
-        "Cumplimiento Regulatorio"
-      ],
-      firm: [
-        "Nuestra Filosofía",
-        "Nuestros Socios",
-        "Asuntos Notables",
-        "Insights",
-        "Carreras"
-      ],
-      offices: [
-        "Buenos Aires",
-        "São Paulo", 
-        "Mexico City",
-        "Santiago",
-        "Consultas de Prensa"
-      ]
-    },
+    tagline: "Precisión legal. Resultados que definen industrias.",
+    columns: [
+      {
+        heading: "Servicios",
+        links: [
+          { label: "Fusiones y Adquisiciones", href: "#services" },
+          { label: "Litigio de Valores", href: "#services" },
+          { label: "Private Equity", href: "#services" },
+          { label: "Arbitraje Internacional", href: "#services" },
+        ]
+      },
+      {
+        heading: "La Firma",
+        links: [
+          { label: "Nuestra Filosofía", href: "#manifesto" },
+          { label: "Los Socios", href: "#team" },
+          { label: "Testimonios", href: "#testimonials" },
+        ]
+      },
+      {
+        heading: "Contacto",
+        links: [
+          { label: "Agendar Consulta", href: "#contact" },
+          { label: "hola@veredic.com", href: "mailto:hola@veredic.com" },
+          { label: "Buenos Aires · São Paulo · CDMX", href: "#contact" },
+        ]
+      }
+    ],
     legal: {
-      copyright: `© ${new Date().getFullYear()} Veredic LLP. Todos los Derechos Reservados. Publicidad de Abogados.`,
-      links: ["Política de Privacidad", "Términos de Uso", "Descargo de Responsabilidad"]
+      copyright: `© ${new Date().getFullYear()} Veredic LLP. Todos los derechos reservados.`,
+      links: ["Política de Privacidad", "Términos de Uso"]
     }
   }
 
