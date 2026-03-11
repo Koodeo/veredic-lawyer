@@ -21,10 +21,10 @@ export default function Services() {
           </div>
           
           <div className="sv-track">
-            {siteConfig.services.items.map((item) => (
+            {siteConfig.services.items.map((service, index) => (
               <div 
-                key={item.id} 
-                className={item.featured ? 'sv-card featured' : 'sv-card'}
+                key={service.id} 
+                className={`sv-card ${service.featured ? 'featured' : ''} sr d${index + 1}`}
               >
                 <svg className="sv-rings" viewBox="0 0 280 280">
                   <circle cx="140" cy="140" r="80" />
@@ -32,7 +32,7 @@ export default function Services() {
                   <circle cx="140" cy="140" r="200" />
                 </svg>
                 
-                <div className="sv-idx">{item.id}</div>
+                <div className="sv-idx">{service.id}</div>
                 
                 <div className="sv-icon">
                   <svg viewBox="0 0 24 24">
@@ -44,11 +44,11 @@ export default function Services() {
                 <div>
                   <h3 
                     className="sv-name"
-                    dangerouslySetInnerHTML={{ __html: item.name }}
+                    dangerouslySetInnerHTML={{ __html: service.name }}
                   />
-                  <p className="sv-desc">{item.description}</p>
+                  <p className="sv-desc">{service.description}</p>
                   <a href={waLink} className="sv-link">
-                    {item.linkText}
+                    {service.linkText}
                     <svg viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>

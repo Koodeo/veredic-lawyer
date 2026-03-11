@@ -60,9 +60,8 @@ export default function Footer() {
       <div className="footer-bot">
         <div className="f-copy">{siteConfig.footer.legal.copyright}</div>
         <div className="f-legal">
-          {siteConfig.footer.legal.links.map((link) => (
-            <a key={link} href="#">{link}</a>
-          ))}
+          <a href="/terminos">Términos de Servicio</a>
+          <a href="/privacidad">Política de Privacidad</a>
         </div>
       </div>
     </footer>

@@ -67,7 +67,7 @@ export const siteConfig = {
   whatsappMessages: {
     general: "Hola, me gustaría conocer más sobre sus servicios legales.",
     cta: "Hola, deseo agendar una Consulta Confidencial. ¿Hablamos?",
-    consultation: "Hola, soy [nombre] de [empresa]. Necesito agendar una Consulta Confidencial para discutir un asunto de [área práctica].",
+    consultation: "Hola, soy [nombre] de [empresa]. Necesito agendar una Consulta Confidencial para discutir un caso de [área práctica].",
   },
 
   // ─── FONTS ────────────────────────
@@ -138,7 +138,7 @@ export const siteConfig = {
   "<em>Estratégico.</em>"
 ],
     subtitle: "Brindamos asesoría legal de alto impacto para las empresas más influyentes de LATAM — fusiones, litigios complejos y las decisiones estratégicas que definen industrias.",
-    ctaPrimary: "Iniciar Su Asunto",
+    ctaPrimary: "Iniciar Su Caso",
     ctaSecondary: "Áreas de Práctica",
     badges: [
       {
@@ -166,7 +166,7 @@ export const siteConfig = {
     items: [
       { value: "15+", label: "Años de Excelencia" },
       { value: "98%", label: "Retención de Clientes" },
-      { value: "340+", label: "Asuntos Resueltos" },
+      { value: "340+", label: "Casos Resueltos" },
       { value: "42+", label: "Jurisdicciones Globales" }
     ] as Stat[]
   },
@@ -189,7 +189,7 @@ export const siteConfig = {
         id: "02",
         icon: "Clock",
         name: "Litigio de<br>Valores",
-        description: "Representación agresiva en fraudes de valores, acciones derivadas y asuntos de cumplimiento ante organismos reguladores.",
+        description: "Representación agresiva en fraudes de valores, acciones derivadas y casos de cumplimiento ante organismos reguladores.",
         linkText: "Explorar Práctica"
       },
       {
@@ -237,7 +237,7 @@ export const siteConfig = {
         id: "II", 
         number: "II.",
         title: "Servicio Liderado por Socios",
-        description: "Cada asunto es dirigido por un socio senior con responsabilidad directa. Sin delegaciones. Sin dilución de experiencia o atención."
+        description: "Cada caso es dirigido por un socio senior con responsabilidad directa. Sin delegaciones. Sin dilución de experiencia o atención."
       },
       {
         id: "III",
@@ -321,7 +321,7 @@ export const siteConfig = {
       },
       {
         id: "JM",
-        text: "Su respuesta a nuestra investigación regulatoria fue inmediata y decisiva — el asunto se resolvió con cero hallazgos en nuestra contra.",
+        text: "Su respuesta a nuestra investigación regulatoria fue inmediata y decisiva — el caso se resolvió con cero hallazgos en nuestra contra.",
         author: "James Mallory",
         role: "CFO, Vantage Group", 
         company: "Vantage Group",
@@ -353,8 +353,8 @@ export const siteConfig = {
   },
 
   contact: {
-    kicker: "Iniciar Su Asunto",
-    title: "Hablemos de su <em>asunto</em>",
+    kicker: "Iniciar Su Caso",
+    title: "Hablemos de su <em>caso</em>",
     subtitle: "Nuestro equipo de intake responde dentro de 4 horas hábiles. Cada consulta es manejada con estricta confidencialidad por un socio senior.",
     trustBadges: ["Confidencial", "Liderado por Socios", "Alcance Global"],
     form: {
@@ -364,7 +364,7 @@ export const siteConfig = {
         email: "Email Corporativo",
         company: "Empresa / Organización",
         practiceArea: "Área de Práctica de Interés",
-        message: "Descripción breve del asunto (opcional)"
+        message: "Descripción breve del caso (opcional)"
       },
       practiceAreas: [
         "Fusiones y Adquisiciones",
@@ -376,6 +376,44 @@ export const siteConfig = {
       ],
       submitText: "Solicitar Consulta Confidencial →"
     }
+  },
+
+  faq: {
+    kicker: "Preguntas Frecuentes",
+    title: "Todo lo que necesita <em>saber</em>",
+    items: [
+      {
+        q: "¿Cómo son los honorarios de Veredic?",
+        a: "Trabajamos con estructuras flexibles según el caso: tarifa fija para consultas iniciales, por hora para litigios activos, y success fee para transacciones M&A. Cada propuesta es transparente y acordada antes de iniciar."
+      },
+      {
+        q: "¿Garantizan confidencialidad absoluta?",
+        a: "Sí. Todo contacto está protegido por el secreto profesional desde el primer mensaje. Firmamos NDA antes de recibir documentación sensible si el cliente lo requiere."
+      },
+      {
+        q: "¿En qué países operan?",
+        a: "Tenemos presencia activa en Argentina, Brasil, México y Chile, con red de corresponsales en 42 jurisdicciones. Manejamos casos transfronterizos de forma integral."
+      },
+      {
+        q: "¿Cuánto tiempo tarda una respuesta inicial?",
+        a: "Nuestro equipo de intake responde dentro de las 4 horas hábiles siguientes. Para casos urgentes, disponemos de línea directa con socio senior."
+      },
+      {
+        q: "¿Trabajan con empresas medianas o solo corporaciones grandes?",
+        a: "Trabajamos con empresas en etapa de crecimiento, fondos de inversión y corporaciones establecidas. El criterio no es el tamaño sino la complejidad del caso."
+      },
+      {
+        q: "¿Cómo inicio el proceso?",
+        a: "Complete el formulario de contacto o escríbanos por WhatsApp. Un socio senior evaluará su caso personalmente y le confirmará si somos el equipo adecuado para representarle."
+      }
+    ]
+  },
+
+  ctaFinal: {
+    eyebrow: "¿Listo para actuar?",
+    title: "Su caso merece <em>precisión</em><br>y dominio legal.",
+    cta: "Iniciar Consulta Confidencial",
+    sub: "Respuesta en menos de 4 horas hábiles · Sin compromiso"
   },
 
   footer: {

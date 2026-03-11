@@ -7,6 +7,8 @@ import Manifesto from "@/components/sections/manifesto";
 import Team from "@/components/sections/team";
 import Testimonials from "@/components/sections/testimonials";
 import Clients from "@/components/sections/clients";
+import FAQ from "@/components/sections/FAQ";
+import CTAFinal from "@/components/sections/CTAFinal";
 import Contact from "@/components/sections/contact";
 
 export default function Home() {
@@ -20,6 +22,8 @@ export default function Home() {
       <Team />
       <Testimonials />
       <Clients />
+      <FAQ />
+      <CTAFinal />
       <Contact />
     </main>
   );

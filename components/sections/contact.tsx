@@ -7,20 +7,20 @@ export default function Contact() {
     <section className="contact" id="contact">
       <div className="contact-inner">
         <div>
-          <div className="c-kicker">{siteConfig.contact.kicker}</div>
+          <div className="c-kicker sr">{siteConfig.contact.kicker}</div>
           <h2 
-            className="c-title"
+            className="c-title sr d1"
             dangerouslySetInnerHTML={{ __html: siteConfig.contact.title }}
           />
-          <p className="c-sub">{siteConfig.contact.subtitle}</p>
-          <div className="c-trust">
+          <p className="c-sub sr d2">{siteConfig.contact.subtitle}</p>
+          <div className="c-trust sr d3">
             {siteConfig.contact.trustBadges.map((badge, index) => (
               <span key={index} className="trust-i">{badge}</span>
             ))}
           </div>
         </div>
         
-        <form className="c-form">
+        <form className="c-form sr d2">
           <div className="form-row">
             <input 
               type="text" 

@@ -4,6 +4,7 @@ import "../styles/globals.css"
 import SiteEffects from "@/components/ui/SiteEffects"
 import Footer from "@/components/layout/Footer"
 import Navbar from "@/components/layout/Navbar"
+import KoodeoTag from "@/components/ui/KoodeoTag"
 
 const cormorant = Cormorant({
   subsets: ['latin'],
@@ -30,6 +31,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
   title: siteConfig.meta.title,
   description: siteConfig.meta.description,
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     title: siteConfig.meta.title,
     description: siteConfig.meta.description,
@@ -52,6 +56,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <KoodeoTag />
       </body>
     </html>
   )
