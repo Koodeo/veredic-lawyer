@@ -1,31 +1,51 @@
-:root {
-  --color-primary: ;
-  --color-primary-light: ;
-  --color-primary-dark: ;
-  --color-dark: ;
-  --color-bg: ;
-  --color-bg-alt: ;
-  --color-muted: ;
-  --color-border: ;
-  --color-success: ;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
+@layer base {
+  :root {
+    /* Color Palette from reference HTML */
+    --cream:    #F7F3F1;
+    --cream2:   #FAF8F6;
+    --stone:    #EBE8E3;
+    --stone2:   #E2DED8;
+    --charcoal: #1C1E21;
+    --slate:    #2A3B4E;
+    --slate2:   #3b526b;
+    --gold:     #C9B398;
+    --gold2:    #b89e82;
+    --ink:      #0f1113;
 
-body {
-  background: var(--color-bg);
-  color: var(--color-dark);
-  margin: 0;
-  padding: 0;
-}
+    /* Semantic variables mapping */
+    --primary: var(--charcoal);
+    --secondary: var(--slate);
+    --accent: var(--gold);
+    --bg: var(--cream);
+    --bg-alt: var(--stone);
+  }
 
-* {
-  box-sizing: border-box;
-}
+  html {
+    @apply scroll-smooth;
+  }
 
-::selection {
-  background: var(--color-primary);
-  color: white;
+  body {
+    @apply bg-cream text-primary antialiased;
+    font-family: var(--font-outfit);
+  }
+
+  /* Film grain overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 9000;
+    pointer-events: none;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 200px;
+  }
+
+  ::selection {
+    @apply bg-accent text-cream;
+  }
 }

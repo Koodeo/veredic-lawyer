@@ -1,9 +1,11 @@
-// Sections are added per project
+import Hero from '@/components/sections/hero'
+import Marquee from '@/components/sections/marquee'
 
 export default function Home() {
   return (
     <main>
-      {/* Sections will be added here based on project requirements */}
+      <Hero />
+      <Marquee />
     </main>
   )
 }

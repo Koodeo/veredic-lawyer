@@ -8,9 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['var(--font-display)'],
-        body: ['var(--font-body)'],
-        mono: ['var(--font-mono)'],
+        serif: ["var(--font-cormorant)", "Georgia", "serif"],
+        sans: ["var(--font-outfit)", "system-ui", "sans-serif"],
       },
       colors: {
         // Semantic color variables from config.ts

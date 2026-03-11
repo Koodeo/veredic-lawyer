@@ -1,27 +1,22 @@
-import { Cormorant, Outfit, JetBrains_Mono } from "next/font/google"
+import { Cormorant, Outfit } from "next/font/google"
 import { siteConfig } from "@/lib/config"
 import "../styles/globals.css"
-import { Navbar } from "@/components/layout/Navbar"
-import { Footer } from "@/components/layout/Footer"
 import CustomCursor from "@/components/ui/custom-cursor"
 import PageLoader from "@/components/ui/page-loader"
 
-const display = Cormorant({ 
-  subsets: ['latin'],
-  variable: '--font-display',
-  style: ['normal', 'italic'],
-  weight: ['300', '400', '500', '600', '700']
+const cormorant = Cormorant({ 
+  subsets: ["latin"], 
+  variable: "--font-cormorant", 
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"]
 })
 
-const body = Outfit({ 
-  subsets: ['latin'],
-  variable: '--font-body',
-  weight: ['200', '300', '400', '500']
-})
-
-const mono = JetBrains_Mono({ 
-  subsets: ["latin"],
-  variable: "--font-mono"
+const outfit = Outfit({ 
+  subsets: ["latin"], 
+  variable: "--font-outfit", 
+  display: "swap",
+  weight: ["200", "300", "400", "500"]
 })
 
 export const metadata = {
@@ -41,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html 
-      className={`${display.variable} ${body.variable} ${mono.variable}`}
+      className={`${cormorant.variable} ${outfit.variable}`}
       style={{
         "--primary": siteConfig.colors.primary,
         "--secondary": siteConfig.colors.secondary,
@@ -64,12 +59,13 @@ export default function RootLayout({
         "--color-success": siteConfig.colors.accent,
       } as React.CSSProperties}
     >
-      <body>
+      <body className={`${cormorant.variable} ${outfit.variable} font-sans bg-cream text-primary antialiased`}>
         <PageLoader />
         <CustomCursor />
-        <Navbar />
+        {/* Navbar y Footer comentados para que Hero ocupe toda la pantalla */}
+        {/* <Navbar /> */}
         <main>{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   )
