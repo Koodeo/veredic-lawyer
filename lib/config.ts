@@ -149,9 +149,8 @@ export const siteConfig = {
 
   stats: {
     kicker: "Por los Números",
-    title: "Un legado forjado en <em>resultados</em>",
-    subtitle: "Cada métrica refleja nuestro compromiso de entregar resultados excepcionales para clientes que demandan el más alto nivel de precisión legal y acumen estratégico.",
-    ghostNumber: "15",
+    title: "Impacto<br><em>cuantificado</em>",
+    description: "Cada métrica refleja nuestro compromiso de entregar resultados excepcionales para clientes que demandan el más alto nivel de precisión legal y acumen estratégico.",
     items: [
       { value: "15+", label: "Años de Excelencia" },
       { value: "98%", label: "Retención de Clientes" },

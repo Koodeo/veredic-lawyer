@@ -1,18 +1,26 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { siteConfig } from '@/lib/config'
 
-export default function Marquee() {
-  // Duplicate the array to create seamless loop
-  const marqueeItems = [...siteConfig.marquee, ...siteConfig.marquee]
+interface MarqueeProps {
+  items: string[]
+}
+
+export default function Marquee({ items }: MarqueeProps) {
+  // Fallback for safety, though data should come from page props
+  if (!items || items.length === 0) {
+    return null
+  }
+
+  // Triple the items to ensure a seamless loop
+  const marqueeItems = [...items, ...items, ...items]
 
   return (
-    <div className="marquee-wrap">
+    <div className="overflow-hidden border-t border-primary/[.08] bg-primary py-5">
       <motion.div 
-        className="marquee-track"
+        className="flex w-max items-center"
         animate={{
-          x: ['0%', '-50%']
+          x: ['0%', '-33.33%']
         }}
         transition={{
           duration: 38,
@@ -21,48 +29,15 @@ export default function Marquee() {
         }}
       >
         {marqueeItems.map((item, index) => (
-          <div key={index} className="m-item">
+          <div 
+            key={index} 
+            className="flex items-center gap-11 whitespace-nowrap px-11 font-serif text-sm font-light italic text-cream/30"
+          >
             {item}
+            <span className="h-1 w-1 rounded-full bg-accent/40" />
           </div>
         ))}
       </motion.div>
-
-      <style jsx>{`
-        .marquee-wrap {
-          background: var(--charcoal);
-          padding: 20px 0;
-          overflow: hidden;
-          border-top: 1px solid rgba(28,30,33,0.08);
-        }
-
-        .marquee-track {
-          display: flex;
-          width: max-content;
-          will-change: transform;
-        }
-
-        .m-item {
-          display: flex;
-          align-items: center;
-          gap: 44px;
-          padding: 0 44px;
-          font-family: var(--font-display);
-          font-size: 14px;
-          font-weight: 300;
-          font-style: italic;
-          color: rgba(247,243,241,0.28);
-          white-space: nowrap;
-        }
-
-        .m-item::after {
-          content: '';
-          width: 4px;
-          height: 4px;
-          border-radius: 50%;
-          background: var(--gold);
-          opacity: 0.45;
-        }
-      `}</style>
     </div>
   )
 }

@@ -1,9 +1,6 @@
-[00:00:00.460] Server  LOG     ✓ Ready in 293ms
-[00:00:03.851] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:06:03.982] Server  LOG     ✓ Compiled in 511ms
-[00:07:33.550] Server  LOG     ✓ Compiled in 73ms
-[00:11:59.417] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:11:59.896] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:00.474] Server  LOG     ✓ Ready in 296ms
+[00:00:03.314] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:03.720] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -40,3 +37,121 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
+[00:00:49.599] Server  LOG     ✓ Compiled in 574ms
+[00:00:49.703] Browser ERROR   ./app/layout.tsx:41:7
+Parsing ecmascript source code failed
+  39 |       suppressHydrationWarning
+  40 |       className={`${cormorant.variable} ${outfit.variable}`
+> 41 |       style={{
+     |       ^^^^^
+  42 |         "--primary": siteConfig.colors.primary,
+  43 |         "--secondary": siteConfig.colors.secondary,
+  44 |         "--accent": siteConfig.colors.accent,
+
+Expected '}', got 'ident'
+[00:00:59.889] Server  LOG     ✓ Compiled in 87ms
+[00:00:59.990] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:01:00.421] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html suppressHydrationWarning={true} className="cormorant_..." style={{...}}>
+                          <body
+                            className="cormorant_d8d12200-module__HhwCAG__variable outfit_112523cd-module__RgANja__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:01:15.936] Browser ERROR   ./app/layout.tsx:83:5
+Parsing ecmascript source code failed
+  81 |         "--color-success": siteConfig.colors.accent,
+  82 |       } as React.CSSProperties}
+> 83 |     >
+     |     ^
+  84 |       <body className={`${cormorant.variable} ${outfit.variable} font-sans bg-cream text-primary antialiased`}>
+  85 |         <PageLoader />
+  86 |         <CustomCursor />
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[00:01:15.936] Browser ERROR   ./app/layout.tsx:82:31
+Parsing ecmascript source code failed
+  80 |         "--color-border": siteConfig.colors.stone,
+  81 |         "--color-success": siteConfig.colors.accent,
+> 82 |       } as React.CSSProperties}
+     |                               ^
+  83 |     >
+  84 |       <body className={`${cormorant.variable} ${outfit.variable} font-sans bg-cream text-primary antialiased`}>
+  85 |         <PageLoader />
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+[00:01:49.305] Server  LOG     ✓ Compiled in 118ms
+[00:05:21.430] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:06:02.740] Server  LOG     ✓ Compiled in 133ms
+[00:09:54.596] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:10:35.133] Server  LOG     ✓ Compiled in 82ms
+[00:11:19.362] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:11:19.795] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html suppressHydrationWarning={true} className="cormorant_..." style={{...}}>
+                          <body
+                            className="cormorant_d8d12200-module__HhwCAG__variable outfit_112523cd-module__RgANja__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:13:17.713] Server  LOG     ✓ Compiled in 624ms
+[00:13:47.666] Server  LOG     ✓ Compiled in 78ms

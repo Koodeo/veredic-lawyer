@@ -36,6 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html 
+      suppressHydrationWarning
       className={`${cormorant.variable} ${outfit.variable}`}
       style={{
         "--primary": siteConfig.colors.primary,

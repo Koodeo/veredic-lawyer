@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionTimingFunction: {
+        'expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
+      },
       fontFamily: {
         serif: ["var(--font-cormorant)", "Georgia", "serif"],
         sans: ["var(--font-outfit)", "system-ui", "sans-serif"],

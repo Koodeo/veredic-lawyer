@@ -1,11 +1,18 @@
-import Hero from '@/components/sections/hero'
-import Marquee from '@/components/sections/marquee'
+import { siteConfig } from "@/lib/config";
+import Hero from "@/components/sections/hero";
+import Marquee from "@/components/sections/marquee";
+import Stats from "@/components/sections/stats";
+import Services from "@/components/sections/services";
+import Manifesto from "@/components/sections/manifesto";
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex flex-col min-h-screen bg-cream">
       <Hero />
-      <Marquee />
+      <Marquee items={siteConfig.marquee} />
+      <Stats />
+      <Services />
+      <Manifesto />
     </main>
-  )
+  );
 }
