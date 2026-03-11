@@ -2,7 +2,7 @@ import { siteConfig } from '@/lib/config'
 
 export default function Clients() {
   return (
-    <section className="clients">
+    <section className="clients" id="clients">
       <div className="clients-label">{siteConfig.clients.label}</div>
       <div className="clients-row">
         {siteConfig.clients.names.map((client) => (

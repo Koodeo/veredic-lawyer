@@ -1018,6 +1018,19 @@ nav a:hover:after {
   transform: translateX(0);
 }
 
+.hero-video {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
 .hero-photo-inner {
   background: linear-gradient(155deg, #dedad5 0%, #cdc8c1 45%, #b8b2aa 100%);
   width: 100%;
@@ -1640,6 +1653,26 @@ nav a:hover:after {
   font-style: italic;
 }
 
+.mf-word {
+  opacity: 0;
+  transition: opacity .8s var(--expo), transform .8s var(--expo);
+  display: inline-block;
+  transform: translateY(20px);
+}
+
+.manifesto.in-view .mf-word {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.manifesto.in-view .mf-word:first-child {
+  transition-delay: .1s;
+}
+
+.manifesto.in-view .mf-word:nth-child(2) {
+  transition-delay: .3s;
+}
+
 .mf-pillars {
   border-top: 1px solid #1c1e2117;
   grid-template-columns: repeat(3, 1fr);
@@ -1789,6 +1822,17 @@ nav a:hover:after {
   transform: scale(1.04);
 }
 
+.t-member-img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
 .t-avatar {
   justify-content: center;
   align-items: center;
@@ -1837,6 +1881,34 @@ nav a:hover:after {
   font-size: 12px;
   font-weight: 200;
   line-height: 1.6;
+}
+
+.t-social {
+  border-top: 1px solid #1c1e210f;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 14px;
+  display: flex;
+}
+
+.t-social-link {
+  color: #1c1e214d;
+  cursor: none;
+  border: 1px solid #1c1e2114;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  transition: border-color .25s, color .25s, background .25s;
+  display: flex;
+}
+
+.t-social-link:hover {
+  color: var(--slate);
+  background: #2a3b4e0a;
+  border-color: #2a3b4e40;
 }
 
 .testi {
@@ -2464,6 +2536,346 @@ footer {
 
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 28px 40px;
+  }
+
+  header.stuck {
+    padding: 16px 40px;
+  }
+
+  nav {
+    gap: 24px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-right {
+    display: none;
+  }
+
+  .hero-left {
+    padding: 140px 40px 100px;
+  }
+
+  .hero-scroll {
+    left: 40px;
+  }
+
+  .hero-wordmark {
+    font-size: 220px;
+    right: -40px;
+  }
+
+  .stats {
+    padding: 100px 40px;
+  }
+
+  .stats-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .stat:nth-child(3) {
+    border-top: 1px solid #1c1e2117;
+  }
+
+  .services {
+    padding: 100px 0 100px 40px;
+  }
+
+  .services-header {
+    padding-right: 40px;
+  }
+
+  .manifesto {
+    padding: 100px 40px;
+  }
+
+  .mf-pillars {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .mf-pillar {
+    border-bottom: 1px solid #1c1e2114;
+    border-right: none;
+    padding: 0 0 40px !important;
+  }
+
+  .mf-pillar:last-child {
+    border-bottom: none;
+    padding-bottom: 0 !important;
+  }
+
+  .team {
+    padding: 100px 40px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testi {
+    padding: 100px 40px;
+  }
+
+  .testi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tc-featured {
+    grid-column: auto;
+  }
+
+  .clients {
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 52px 40px;
+  }
+
+  .contact {
+    padding: 100px 40px;
+  }
+
+  .contact-inner {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  footer {
+    padding: 60px 40px 36px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  #cursor-wrap {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+
+  a, button, .h-cta, .f-btn {
+    cursor: pointer;
+  }
+
+  header {
+    padding: 22px 24px;
+  }
+
+  header.stuck {
+    padding: 14px 24px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .h-cta {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+
+  .hero-left {
+    padding: 120px 24px 80px;
+  }
+
+  .hero-scroll {
+    bottom: 32px;
+    left: 24px;
+  }
+
+  .hero-wordmark {
+    display: none;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 24px;
+  }
+
+  .m-item {
+    gap: 28px;
+    padding: 0 28px;
+    font-size: 12px;
+  }
+
+  .stats {
+    padding: 80px 24px;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat {
+    padding: 36px 0 36px 24px;
+  }
+
+  .stats-ghost {
+    display: none;
+  }
+
+  .services {
+    padding: 80px 0 80px 24px;
+  }
+
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 48px;
+    padding-right: 24px;
+  }
+
+  .sv-meta {
+    text-align: left;
+  }
+
+  .sv-count {
+    font-size: 60px;
+  }
+
+  .sv-card {
+    flex: 0 0 280px;
+    height: 400px;
+  }
+
+  .manifesto {
+    padding: 80px 24px;
+  }
+
+  .mf-text {
+    font-size: 28px;
+  }
+
+  .team {
+    padding: 80px 24px;
+  }
+
+  .team-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .t-photo {
+    height: 200px;
+  }
+
+  .testi {
+    padding: 80px 24px;
+  }
+
+  .testi-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .tc {
+    padding: 28px;
+  }
+
+  .tc-featured {
+    padding: 32px;
+  }
+
+  .tc-text {
+    font-size: 16px;
+  }
+
+  .tc-featured .tc-text {
+    font-size: 17px;
+  }
+
+  .testi-bg-mark {
+    font-size: 240px;
+  }
+
+  .clients {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    padding: 48px 24px;
+  }
+
+  .clients-row {
+    gap: 28px 40px;
+  }
+
+  .client-name {
+    font-size: 15px;
+  }
+
+  .contact {
+    padding: 80px 24px;
+  }
+
+  .c-trust {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 52px 24px 32px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-bot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  #loader-hud {
+    bottom: 40px;
+    left: 24px;
+    right: 24px;
+  }
+
+  #scroll-prog {
+    height: 1px;
   }
 }
 

@@ -4,7 +4,7 @@ export default function Hero() {
   const waLink = `https://wa.me/${siteConfig.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(siteConfig.whatsappMessages.cta)}`
   
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero-grid-bg"></div>
       <div className="hero-wordmark">{siteConfig.name.charAt(0)}</div>
       
@@ -49,17 +49,16 @@ export default function Hero() {
       </div>
       
       <div className="hero-right">
-        <div id="heroPhoto" className="hero-photo">
+        <div id="heroPhoto" className="hero-photo show">
           <div className="hero-photo-inner">
-            <div className="arch-line"></div>
-            <div className="arch-line"></div>
-            <div className="arch-line"></div>
-            <div className="arch-line"></div>
-            <svg className="arch-svg" viewBox="0 0 400 600" preserveAspectRatio="none">
-              <path d="M0,0 Q200,150 400,0" fill="none" stroke="rgba(247,243,241,0.15)" strokeWidth="1"/>
-              <path d="M0,200 Q200,350 400,200" fill="none" stroke="rgba(247,243,241,0.15)" strokeWidth="1"/>
-              <path d="M0,400 Q200,550 400,400" fill="none" stroke="rgba(247,243,241,0.15)" strokeWidth="1"/>
-            </svg>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="hero-video"
+              src="/veredict-video.webm"
+            />
           </div>
           
           <div className="badge badge-1">

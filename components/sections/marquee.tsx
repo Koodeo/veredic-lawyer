@@ -6,7 +6,7 @@ export default function Marquee({ items }: MarqueeProps) {
   const marqueeItems = [...items, ...items]
 
   return (
-    <div className="marquee-wrap">
+    <section className="marquee-wrap" id="marquee">
       <div className="marquee-track">
         {marqueeItems.map((item, index) => (
           <span key={index} className="m-item">
@@ -14,6 +14,6 @@ export default function Marquee({ items }: MarqueeProps) {
           </span>
         ))}
       </div>
-    </div>
+    </section>
   )
 }

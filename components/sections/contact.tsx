@@ -4,7 +4,7 @@ export default function Contact() {
   const waLink = `https://wa.me/${siteConfig.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(siteConfig.whatsappMessages.cta)}`
   
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className="contact-inner">
         <div>
           <div className="c-kicker">{siteConfig.contact.kicker}</div>

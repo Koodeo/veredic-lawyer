@@ -14,6 +14,9 @@ interface TeamMember {
   role: string;
   specialty: string;
   initials: string;
+  photo: string;
+  linkedin?: string;
+  x?: string;
 }
 
 interface Testimonial {
@@ -255,28 +258,40 @@ export const siteConfig = {
         name: "William H. Ashford",
         role: "Socio Director",
         specialty: "M&A · Gobernanza Corporativa",
-        initials: "WA"
+        initials: "WA",
+        photo: "/william.jpg",
+        linkedin: "https://linkedin.com/in/william-ashford",
+        x: "https://x.com/washford"
       },
       {
         id: "EP",
         name: "Eleanor S. Park", 
         role: "Socia Senior",
         specialty: "Valores · Litigio",
-        initials: "EP"
+        initials: "EP",
+        photo: "/eleanor.jpg",
+        linkedin: "https://linkedin.com/in/eleanor-park",
+        x: ""
       },
       {
         id: "MC",
         name: "Marcus J. Chen",
         role: "Socio",
         specialty: "Private Equity · Fondos", 
-        initials: "MC"
+        initials: "MC",
+        photo: "/marcus.jpg",
+        linkedin: "https://linkedin.com/in/marcus-chen",
+        x: "https://x.com/marcuschen"
       },
       {
         id: "AL",
         name: "Adrienne Laval",
         role: "Socia",
         specialty: "Arbitraje Internacional",
-        initials: "AL"
+        initials: "AL",
+        photo: "/adrienne.jpg",
+        linkedin: "https://linkedin.com/in/adrienne-laval",
+        x: ""
       }
     ] as TeamMember[]
   },

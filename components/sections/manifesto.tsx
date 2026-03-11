@@ -2,17 +2,16 @@ import { siteConfig } from '@/lib/config'
 
 export default function Manifesto() {
   return (
-    <section className="manifesto">
+    <section className="manifesto" id="manifesto">
       <div className="manifesto-deco"></div>
       
       <div className="mf-label">
         {siteConfig.manifesto.kicker}
       </div>
       
-      <p 
-        className="mf-text"
-        dangerouslySetInnerHTML={{ __html: siteConfig.manifesto.text }}
-      />
+      <p className="mf-text">
+        No solo asesoramos — nos <span className="hl mf-word">integramos</span> en el núcleo estratégico de su empresa. Donde otros ven complejidad, nosotros vemos el <span className="hl mf-word">camino preciso</span> hacia la resolución.
+      </p>
       
       <div className="mf-pillars">
         {siteConfig.manifesto.pillars.map((pillar, index) => (

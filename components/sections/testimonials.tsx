@@ -4,7 +4,7 @@ export default function Testimonials() {
   const items = siteConfig.testimonials.items
   
   return (
-    <section className="testi">
+    <section className="testi" id="testimonials">
       <div className="testi-bg-mark">❝</div>
       
       <div className="testi-header">

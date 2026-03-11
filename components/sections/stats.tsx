@@ -2,7 +2,7 @@ import { siteConfig } from '@/lib/config'
 
 export default function Stats() {
   return (
-    <section className="stats">
+    <section className="stats" id="stats">
       <div className="stats-ghost">98</div>
       
       <div className="stats-top">

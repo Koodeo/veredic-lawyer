@@ -5,6 +5,7 @@ import { siteConfig } from '@/lib/config'
 
 export default function SiteEffects() {
   useEffect(() => {
+
     /* ══════════════════════════════════
        1. LOADER
     ══════════════════════════════════ */
@@ -79,6 +80,22 @@ export default function SiteEffects() {
     srEls.forEach(el => srObs.observe(el))
 
     /* ══════════════════════════════════
+       3.5. MANIFESTO TEXT REVEAL
+    ══════════════════════════════════ */
+    const manifestoSection = document.querySelector('.manifesto')
+    if (manifestoSection) {
+      const manifestoObs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in-view')
+            manifestoObs.unobserve(e.target)
+          }
+        })
+      }, { threshold: 0.3 })
+      manifestoObs.observe(manifestoSection)
+    }
+
+    /* ══════════════════════════════════
        4. CUSTOM CURSOR
        — states applied to #cursor-wrap, NOT body
     ══════════════════════════════════ */
@@ -115,13 +132,14 @@ export default function SiteEffects() {
     document.addEventListener('mousemove', handleMouseMove)
 
     function cursorLoop() {
-      if (cursorWrap) {
-        cursorWrap.style.transform = `translate(${mx}px, ${my}px)`
-      }
       rx += (mx - rx) * 0.11
       ry += (my - ry) * 0.11
+      if (cursorWrap) {
+        cursorWrap.style.transform = `translate(${mx}px, ${my}px)` 
+      }
       if (cRing) {
-        cRing.style.transform = `translate(${rx - mx}px, ${ry - my}px) translate(-50%,-50%)`
+        cRing.style.transform = 
+          `translate(${rx - mx}px, ${ry - my}px) translate(-50%,-50%)` 
       }
       animationId = requestAnimationFrame(cursorLoop)
     }
@@ -163,7 +181,7 @@ export default function SiteEffects() {
     /* ══════════════════════════════════
        5. SERVICES — sticky horizontal scroll
     ══════════════════════════════════ */
-    const servicesOuter = document.getElementById('servicesOuter')
+    const servicesOuter = document.getElementById('services')
     const svTrackEl = document.querySelector('.sv-track') as HTMLElement
 
     const handleServiceScroll = () => {

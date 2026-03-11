@@ -4,7 +4,7 @@ export default function Services() {
   const waLink = `https://wa.me/${siteConfig.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(siteConfig.whatsappMessages.consultation)}`
   
   return (
-    <div className="services-outer" id="servicesOuter">
+    <div className="services-outer" id="services">
       <div className="services-sticky">
         <section className="services">
           <div className="services-header">
